@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Tracker</title>
+  </head>
+  <body class="bg-[#1D1B2F]">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-white">Finance Tracker</h1>
+        <user-badge></user-badge>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <expense-total></expense-total>
+          <expense-form></expense-form>
+          <expense-list></expense-list>
+        </div>
+        <div>
+          <expense-chart></expense-chart>
+        </div>
+      </div>
+    </div>
+    <settings-popup></settings-popup>
+    <alert-popup></alert-popup>
+    <summary-popup></summary-popup>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> 

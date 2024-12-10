@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.category-item .icon-wrapper svg {
+  width: 32px;
+  height: 32px;
+}
+
+.category-item input:checked + div {
+  @apply border-violet-500 bg-[#2D2B3F];
+}
+
+.category-item:hover .icon-wrapper {
+  @apply text-violet-500;
+} 
